@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<script src="client.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Simple Chat</title>
+	</head>
 
-<head>
-    <script src="client.js"></script>
-</head>
-
-<body>
-    <div>
-        <h1>Simple Chat App</h1>
-        <textarea id="chatBox" rows="10" cols="30"></textarea>
-        <br>
-        <br>
-    </div>
-    <form>
-        <fieldset>
-            <legend>Message Box</legend>
-            <textarea id="sendMessage"></textarea>
-            <br>
-            <input type="submit" id="submit" value="Send">
-        </fieldset>
-
-    </form>
-</body>
+	<body>
+		<div class="body">
+			<h1>Simple Chat</h1>
+			
+			<!--Chat box where all the messages will appear-->
+			<textarea id="chatBox" rows="27" cols="100"></textarea></br></br>
+			
+			<!--Message box where the user is able to enter their message and send it-->
+			<form>
+				<fieldset id="msgfieldset">
+					<legend>Message Box</legend>
+					<textarea id="sendMessage" rows="3" cols="96"></textarea></br>
+					
+					<input type="submit" id="submit" value="Send">
+				</fieldset>
+			</form>
+			
+			<!--Footer-->
+			<footer>
+				<center><p></br>Simple Chat by Ankur Malhotra and Garman Liu, 2016</p></center>
+			</footer>
+		</div>
+		
+		
+	</body>
+	
+	
 
 </html>

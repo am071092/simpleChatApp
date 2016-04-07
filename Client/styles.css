@@ -1,11 +1,15 @@
 .body {
-	width: 700px;
-	height: 500px;
+	width: 750px;
+	height: 650px;
 	margin: auto;
 }
 
+h1, input {
+	font-family: Calibri;
+}
+
 p {
-	font-family: Arial;
+	font-family: Calibri;
 	font-size: 10px;
 }
 
@@ -15,4 +19,15 @@ textarea {
 
 #msgfieldset {
 	display: inline-block;
+	font-family: Calibri;
+}
+
+#sendMessage {
+	float: left;
+}
+
+#submit{
+	float: right;
+	width: 70px;
+	height: 51px;
 }

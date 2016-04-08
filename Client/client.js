@@ -8,8 +8,8 @@ var sendMessage = function () {
     var message = messageElem.value;
 
     var xhr = new XMLHttpRequest();
-    var params = "message=" + message;
-    xhr.open('POST', "http://localhost:1337/", true);
+    var params = message;
+    xhr.open('POST', "http://localhost:1337/" + params, true);
     xhr.onreadystatechange = processRequest;
 
     xhr.send(params);
@@ -17,7 +17,10 @@ var sendMessage = function () {
 
     function processRequest(e) {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            var response = JSON.parse(xhr.responseText);
+            var response = xhr.responseText;
+            var chatBoxElem = document.getElementById("chatBox");
+            chatBoxElem.value += response + "\n";
+            messageElem.value = "";
         }
     }
 }
